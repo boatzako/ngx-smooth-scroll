@@ -122,7 +122,7 @@ export class SmoothScrollService {
     this.smoothScroll(0, opt, el);
   }
 
-  public smoothScrollToAnchor(opt: ISmoothScrollOption = {}, el: HTMLElement = this.document.documentElement) {
+  public smoothScrollToAnchor(opt: ISmoothScrollOption = {}, container: HTMLElement = this.document.documentElement) {
     if (isPlatformBrowser(this.platformId)) {
       let eid = window.location.hash;
       if (eid) {
@@ -130,12 +130,20 @@ export class SmoothScrollService {
       }
       let target = this.document.getElementById(eid);
       if (target) {
-        this.smoothScroll(target.offsetTop - el.offsetTop, opt, el);
+        this.smoothScroll(this.findHeight(target, container), opt, container);
       }
     }
   }
 
   private _findCache(el: HTMLElement): Cache {
     return this._caches.find(h => h.el.isSameNode(el))
+  }
+
+  public findHeight(target: HTMLElement, container: HTMLElement = this.document.documentElement) {
+    let a = this.document.documentElement.isSameNode(container)
+      ? 0 : container.getBoundingClientRect().top
+    let b = target.getBoundingClientRect().top
+    let d = container.scrollTop
+    return b - a + d
   }
 }

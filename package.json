@@ -1,11 +1,17 @@
 {
   "name": "@boatzako/ngx-smooth-scroll",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "license": "MIT",
   "author": {
     "name": "BoatZako",
     "email": "boat_zako@hotmail.com"
   },
+  "keywords": [
+    "ngx",
+    "angular",
+    "smooth",
+    "scroll"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BoatZako/ngx-smooth-scroll.git"

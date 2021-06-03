@@ -39,9 +39,10 @@ export class SmoothScrollDirective {
         }
         eid = eid.replace('#', '');
       }
+
       let target = this.document.getElementById(eid) || this.document.getElementById(this.scrollTo);
       if (target) {
-        this.smooth.smoothScroll(target.offsetTop, { duration: this.duration, easing: this.easing, offset: this.offset }, container);
+        this.smooth.smoothScroll(this.smooth.findHeight(target, container), { duration: this.duration, easing: this.easing, offset: this.offset }, container);
       }
     }
   }
