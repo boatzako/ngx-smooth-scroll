@@ -3,9 +3,8 @@
 [![Weekly downloads](https://badgen.net/npm/dw/@boatzako/ngx-smooth-scroll)](https://badgen.net/npm/dw/@boatzako/ngx-smooth-scroll)
 [![Total downloads](https://badgen.net/npm/dt/@boatzako/ngx-smooth-scroll)](https://badgen.net/npm/dt/@boatzako/ngx-smooth-scroll)
 [![License](https://badgen.net/npm/license/@boatzako/ngx-smooth-scroll)](https://badgen.net/npm/license/@boatzako/ngx-smooth-scroll)
-[![Minified](https://badgen.net/bundlephobia/min/@boatzako/ngx-smooth-scroll)](https://badgen.net/bundlephobia/min/@boatzako/ngx-smooth-scroll)
 
-Smooth scroll for Angular9+. [Demo](https://stackblitz.com/edit/boatzako-ngx-smooth-scroll-demo)
+Smooth scroll for Angular13+. [Demo](https://stackblitz.com/edit/boatzako-ngx-smooth-scroll-demo)
 
 ## Getting Started
 

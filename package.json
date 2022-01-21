@@ -1,6 +1,6 @@
 {
   "name": "@boatzako/ngx-smooth-scroll",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "license": "MIT",
   "author": {
     "name": "BoatZako",
@@ -16,9 +16,11 @@
     "type": "git",
     "url": "git+https://github.com/BoatZako/ngx-smooth-scroll.git"
   },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
   "peerDependencies": {
-    "@angular/common": "^9.0.7",
-    "@angular/core": "^9.0.7",
-    "tslib": "^1.10.0"
+    "@angular/common": "^13.1.0",
+    "@angular/core": "^13.1.0"
   }
 }
